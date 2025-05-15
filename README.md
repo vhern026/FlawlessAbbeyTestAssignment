@@ -29,11 +29,9 @@
 
 
 
-## Known Issues
-
-Dragging an item onto an occupied slot overwrites the target slot instead of swapping or canceling. 
-The GameMode inventory array sometimes fails to update the item’s new index after drag-and-drop, causing a mismatch between the UI and stored data. 
-(A sort algorithm should come in handy here to fix both of these bugs.)
+## Known Issues Update
+Viewport Zoom	Camera zoom lacks proper clamping and allows the user to zoom past the mesh.
+Viewport Rotation	logic is over-clamped, letting the model spin around a specific area; needs revised limits for full 360 degrees manipulation.
 
 ## Dialogue System
 
