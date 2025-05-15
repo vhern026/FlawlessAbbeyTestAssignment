@@ -31,8 +31,9 @@
 
 ## Known Issues
 
-Dragging an item onto an occupied slot overwrites the target slot instead of swapping or canceling.
-The GameMode inventory array sometimes fails to update the item’s new index after drag-and-drop, causing a mismatch between the UI and stored data.
+Dragging an item onto an occupied slot overwrites the target slot instead of swapping or canceling. 
+The GameMode inventory array sometimes fails to update the item’s new index after drag-and-drop, causing a mismatch between the UI and stored data. 
+(A sort algorithm should come in handy here to fix both of these bugs.)
 
 ## Dialogue System
 
