@@ -34,9 +34,7 @@
 Dragging an item onto an occupied slot overwrites the target slot instead of swapping or canceling.
 The GameMode inventory array sometimes fails to update the item’s new index after drag-and-drop, causing a mismatch between the UI and stored data.
 
-
-### Dialogue System
-## Dialogue System: Quick Design Summary
+## Dialogue System
 
 **Interface**
 
