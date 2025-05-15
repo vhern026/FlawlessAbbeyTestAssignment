@@ -37,32 +37,32 @@ The GameMode inventory array sometimes fails to update the item’s new index af
 
 ## Dialogue System
 
-**Interface**
+### **Interface**
 
 * All interactables implement BPI_Interactable with three methods: Interact, ShowNextLine, and FinishInteraction.
 * This keeps the API uniform and avoids casting.
 
-**Parent Blueprints**
+### **Parent Blueprints**
 
 * Three parent blueprints hold shared logic for NPCs and world props.
 * Key variables (CurrentRow, ResetRow) are exposed so level designers can tweak them in the editor.
 
-**Data-Driven Dialogue**
+### **Data-Driven Dialogue**
 
 * A struct stores CurrentRowID and NextRowID.
 * Dialogue text lives in a data table, making localization and edits simple.
 
-**Interaction Flow**
+### **Interaction Flow**
 
 1. Interact locks player input and shows the current line.
 2. A timer reveals text at TextRevealSpeed.
 3. ShowNextLine loads the next row; if none exists, FinishInteraction unlocks movement and resets the dialogue.
 
-**HUD Integration**
+### **HUD Integration**
 
 * One HUD widget contains both the inventory and a speech-bubble widget, handling show/hide animations and text updates.
 
-**Why This Approach**
+### **Why This Approach**
 
 * Interfaces remove costly casts and keep player code generic.
 * Parent blueprints stop logic duplication.
@@ -101,7 +101,7 @@ The GameMode inventory array sometimes fails to update the item’s new index af
 * The system casts to **GameMode** (to reach the HUD and items array).
 * This cast is safe and inexpensive because GameMode is spawned once per level and never destroyed, eliminating dangling-reference risks.
 
-### Why This Setup
+### Why This Approach
 
 * **Persistence:** GameInstance keeps items across level loads.
 * **Editor-friendly:** designers only enter an item name; the data table supplies the rest.
