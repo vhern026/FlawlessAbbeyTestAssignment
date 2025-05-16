@@ -27,12 +27,6 @@
    * After placing the jug in the preview pane, click **Forget Note**.
    * The jug should vanish from the preview pane, the inventory, and the underlying Game Mode data while leaving other items intact.
 
-
-
-## Known Issues Update
-Viewport Zoom	Camera zoom lacks proper clamping and allows the user to zoom past the mesh.
-Viewport Rotation	logic is over-clamped, letting the model spin around a specific area; needs revised limits for full 360 degrees manipulation.
-
 ## Dialogue System
 
 ### **Interface**
