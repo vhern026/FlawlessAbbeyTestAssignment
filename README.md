@@ -1,4 +1,4 @@
-**Please Note:** I'm using GameMode here instead of GameInstance so the team can see how the item array behaves—specifically (i exposed it so its instance editable), how moving items around in the inventory also affects their position in persistent data. In the actual game, I'll be using GameInstance exclusively.
+**Please Note:** I'm using GameMode here instead of GameInstance so the team can see how the item array behaves—specifically (I exposed it so its instance editable), how moving items around in the inventory also affects their position in persistent data. In the actual game, I'll be using GameInstance exclusively.
 
 
 # FlawlessAbbeyTestAssignment
