@@ -1,7 +1,7 @@
 **Please Note:** I'm using GameMode here instead of GameInstance so anyone can see how the item array behaves—specifically (I exposed it so its instance editable), how moving items around in the inventory also affects their position in persistent data. In the actual game development, I'd be using GameInstance exclusively to store and pull persistant data.
 
 
-# SimpleInventoryDialogueShowcase
+# Simple Inventory & Dialogue Showcase
 ## How to Play-test
 
 1. **Launch the project** and load the test scene. You will see three interactable objects:
